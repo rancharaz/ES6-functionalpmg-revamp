@@ -127,3 +127,136 @@ console.log(me.getName())
 console.log(me.setJob('senior developer')) */
 
 
+
+/* Higher order functions  */
+
+
+/* const person = {
+    name: "John doe",
+    age: 50,
+    hairColor: 'brown',
+    eyeColor: 'blue'
+}
+
+const careerData = {
+    title: "Developer",
+    company: 'ABC software'
+}
+
+const personCareerData = {
+    ...person,
+    ...careerData
+}
+
+console.log(personCareerData) */
+
+/* const numbers = [1, 2, 3, 4, 5, 6]
+const newNumbers = [
+    0,
+    ...numbers,
+    7
+]
+
+console.log(newNumbers) */
+
+
+/* const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let newNumbers = numbers.map(number => number * 2);
+console.log(newNumbers)
+
+
+let numEven = numbers.filter(number => number % 2 === 0)
+console.log(numEven) */
+
+
+const words = [
+    'hello',
+    'goodbye',
+    'the',
+    'antartica'
+]
+
+let filterFive = words.filter(word => word.length > 5);
+console.log(filterFive)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
