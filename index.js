@@ -170,7 +170,7 @@ let numEven = numbers.filter(number => number % 2 === 0)
 console.log(numEven) */
 
 
-const words = [
+/* const words = [
     'hello',
     'goodbye',
     'the',
@@ -179,35 +179,67 @@ const words = [
 
 let filterFive = words.filter(word => word.length > 5);
 console.log(filterFive)
+ */
 
 
 
+/* const employees = [{
+    name: 'Jane Doe',
+    salary: 90000,
+}, {
+    name: 'Donald Jones',
+    salary: 65000,
+}, {
+    name: 'Donna Appleseed',
+    salary: 1500000,
+}, {
+    name: 'John Smith',
+    salary: 250000,
+}]; */
+
+
+/* const makeMillions = () => employees.filter(employee => employee.salary > 1000000);
+const result = employees.some(makeMillions)
+console.log(result)
+ */
+
+/* let name = "david";
+let joe = !!name; //convert to boolean
+console.log(joe) */
 
 
 
+/* const formValues = [
+    'shawn',
+    'david',
+    'Maine',
+    ''
+]
+
+const isNotEmpty = string => !!string;
+const allFiend = formValues.every(isNotEmpty)
+
+console.log(allFiend)
+ */
+
+
+/* let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let sliNumbers = numbers.slice(2, 5);
+console.log(numbers.slice().reverse())
+console.log(numbers)
+
+console.log(sliNumbers) */
 
 
 
+/* let numbers = [5, 6, 10, 11, 25, 44, 88, 98, 80, 64, 58, 77, 35, 25, 73, 16]
+const sortNum = numbers.sort()
+console.log(sortNum.sort((a, b) => b - a)) */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let numbers = [5, 6, 10, 11, 25, 44, 88, 98, 80, 64, 58, 77, 35, 25, 73, 16]
+const reduceNum = numbers.reduce((total, numbers) => total + numbers, 0)
+console.log(reduceNum)
 
 
 
