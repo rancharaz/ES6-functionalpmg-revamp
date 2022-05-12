@@ -236,28 +236,68 @@ console.log(sliNumbers) */
 /* let numbers = [5, 6, 10, 11, 25, 44, 88, 98, 80, 64, 58, 77, 35, 25, 73, 16]
 const sortNum = numbers.sort()
 console.log(sortNum.sort((a, b) => b - a)) */
-
+/* 
 let numbers = [5, 6, 10, 11, 25, 44, 88, 98, 80, 64, 58, 77, 35, 25, 73, 16]
 const reduceNum = numbers.reduce((total, numbers) => total + numbers, 0)
 console.log(reduceNum)
+ */
 
 
 
+/* 
+
+const employees = [{
+    name: 'John Olsen',
+    age: 54,
+    jobTitle: 'developer',
+    salary: 70000,
+}, {
+    name: 'Karen Norris',
+    age: 34,
+    jobTitle: 'engineer',
+    salary: 75000,
+}, {
+    name: 'Daryl Cline',
+    age: 25,
+    jobTitle: 'secretary',
+    salary: 54000,
+}, {
+    name: 'Abbey Garcia',
+    age: 40,
+    jobTitle: 'developer',
+    salary: 100000,
+}, {
+    name: 'Finn Smith',
+    age: 29,
+    jobTitle: 'engineer',
+    salary: 40000,
+}, {
+    name: 'Eve Wordsworth',
+    age: 20,
+    jobTitle: 'developer',
+    salary: 65000,
+}, {
+    name: 'Ronald Jacobs',
+    age: 60,
+    jobTitle: 'developer',
+    salary: 90000,
+}];
 
 
 
+const filterEmployee = employees.filter(employee => employee.jobTitle !== 'developer');
+console.log(filterEmployee)  
 
+const mapEmployeee = filterEmployee.map(filterEmployee => filterEmployee.salary)
+console.log(mapEmployeee)
 
+const reduceEmployee = mapEmployeee.reduce((total, mapEmployeee) => total + mapEmployeee, 0)
+console.log(reduceEmployee)
 
+const averageSalary = reduceEmployee / mapEmployeee.length;
+console.log(averageSalary)
 
-
-
-
-
-
-
-
-
+*/
 
 
 
