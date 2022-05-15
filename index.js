@@ -300,27 +300,71 @@ console.log(averageSalary)
 */
 
 
+/* const add = (x, y) => x + y;
+const addPartial = (x, y) => add(x, y);
+
+const add5 = addPartial(5, 10)
+console.log(add5) */
+
+
+/* const countDown = x => {
+    if (x < 0) return;
+    console.log(x);
+    countDown(x - 1)
+}
+countDown(10) */
+
+
+/* const countUp = (x, max) => {
+    if (x > max) return;
+    console.log(x);
+    countUp(x + 1, max)
+}
+countUp(0, 500) */
+
+/* 
+convert arrow function to normal function */
+/* const add = (x, y, z) => x + y + z;
+console.log(add.toString()) */
+
+/* const add = (x, y, z) => x + y + z;
+console.log(add(1, 2, 3))
+ */
+
+/* const add = (x, y, z) => x + y + z;
+console.log(add.apply(null, [1, 3, 3]))
+ */
+
+/* const add = (x, y, z) => x + y + z;
+const arg = [1, 2, 3];
+console.log(add(...arg)) */
+
+/* const add = (x, y, z) => x + y + z;
+const arg = [1, 2, 3];
+const add1 = add.bind(null, 1);
+console.log(add1(2, 3)) */
+
+
+/* challenges */
 
 
 
+const electionVotes = [
+    'Harry', 'Rick', 'Ben', 'Ben', 'Harry', 'Ashley',
+    'Connor', 'Rick', 'Ashley', 'Rick', 'Albert', 'Ben',
+    'Michael', 'Rick', 'Albert', 'Karen', 'Harry',
+    'Karen', 'Donna', 'Ashley', 'Albert', 'Harry',
+    'Dane', 'Dane', 'Rick', 'Donna', 'Mortimer',
+];
+
+const tallyVotes = votes =>
+    votes.reduce((total, name) => ({
+        ...total,
+        [name]: total[name] ? total[name] + 1 : 1,
+    }), {})
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(tallyVotes(electionVotes));
 
 
 
