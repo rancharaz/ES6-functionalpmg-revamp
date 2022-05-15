@@ -349,7 +349,7 @@ console.log(add1(2, 3)) */
 
 
 
-const electionVotes = [
+/* const electionVotes = [
     'Harry', 'Rick', 'Ben', 'Ben', 'Harry', 'Ashley',
     'Connor', 'Rick', 'Ashley', 'Rick', 'Albert', 'Ben',
     'Michael', 'Rick', 'Albert', 'Karen', 'Harry',
@@ -365,14 +365,34 @@ const tallyVotes = votes =>
 
 
 console.log(tallyVotes(electionVotes));
+ */
+
+import words from 'an-array-of-english-words';
 
 
+const counterOcurrences = arr =>
+    arr.reduce((total, str) => ({
+        ...total,
+        [str]: acc[str] ? acc[str] + 1 : 1,
+    }), {})
+
+const hasSameLetterCount = (word1, word2) => {
+    const word1Count = counterOcurrences(word1.split(''))
+    const word2Count = counterOcurrences(word2.split(''))
+
+    return Object.keys(word1Count).length === Object.keys(word2Count).length
+        && Object.keys(word1Count).every(letter => word1Count[letter] === word2Count[letter])
+}
 
 
+const findAnagrams = (word, allWords) => {
 
+    return allWords.filter(entry => hasSameLetterCount(word, entry))
+        .filer(anagram => anagram !== word)
+}
 
+console.log(findAnagrams('cinema', words));
 
-
-
-
-
+/*
+    Expected output: ['iceman', 'anemic']
+*/

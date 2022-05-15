@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
   env: {
     browser: true,
     es2021: true,
@@ -6,13 +6,14 @@ module.exports = {
   extends: [
     /*  'airbnb-base', */
   ],
-  parserOptions: {
-    ecmaVersion: 'latest',
+parserOptions: {
+  ecmaVersion: 'latest',
   },
-  plugins: [
-    'immutable',
-  ],
+plugins: [
+  'immutable',
+],
   rules: {
-    'immuatable/no-mutable': 2,
+  'immuatable/no-mutable': 2,
   },
 };
+ * /
